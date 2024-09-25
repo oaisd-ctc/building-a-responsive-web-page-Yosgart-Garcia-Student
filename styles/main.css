@@ -9,12 +9,19 @@ body
     color: rgb(200, 230, 250);
 }
 
+h1, h2, h3
+{
+    color: rgb(220, 240, 250);
+}
+
 nav
 {
     display:flex;
     background-color: rgb(50, 80, 100);
     justify-content: space-between;
     padding: 10px;
+    
+    border-radius: 10px;
 }
 
 #projects
@@ -26,7 +33,7 @@ nav
 
 div > article
 {
-    border-style: dashed;
+    border-style: solid;
     border-color: rgb(50, 80, 100);
 
     margin: 10px;
@@ -35,16 +42,25 @@ div > article
     background-color: rgb(10, 13, 20);
 }
 
+img
+{
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 800px) and (min-width: 501px)
 {
     div > article
     {
         
         border-color: rgb(100, 130, 150);
-        border-style: solid;
         border-width: 2px;
 
         background-color: rgb(40, 43, 50);
+    }
+
+    img
+    {
+        max-width: 350px;
     }
 }
 
@@ -53,14 +69,22 @@ div > article
     div > article
     {
         border-color: rgb(200, 230, 250);
-        border-style: solid;
         border-width: 2px;
 
         background-color: rgb(60, 63, 70);
     }
 
+    img
+    {
+        max-width: 200px;
+    }
+
     nav
     {
+        border-style: solid;
+        border-width: 1px;
+        line-height: 30px;
+
         flex-direction: column
     }
 }
